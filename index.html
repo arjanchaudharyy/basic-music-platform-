@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEPFOLK - Music Streaming Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NEPFOLK</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Playlists</a></li>
+                <li><a href="#">Recommendations</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for songs, artists, albums..." aria-label="Search">
+            <button id="search-button" aria-label="Search Button">Search</button>
+        </div>
+        <div class="music-player">
+            <div id="player" role="region" aria-label="Music Player"></div>
+            <div class="controls">
+                <button id="prev-button" aria-label="Previous Button">Prev</button>
+                <button id="play-button" aria-label="Play Button">Play</button>
+                <button id="next-button" aria-label="Next Button">Next</button>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Search Results</h2>
+            <div id="results-container"></div>
+        </div>
+        <div class="playlists">
+            <h2>Playlists</h2>
+            <div id="playlists-container"></div>
+            <input type="text" id="playlist-name" placeholder="New Playlist Name" aria-label="New Playlist Name">
+            <button id="create-playlist-button" aria-label="Create Playlist Button">Create Playlist</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
